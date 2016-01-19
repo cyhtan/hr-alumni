@@ -6,6 +6,11 @@ angular.module('codeShare.controller', ['ui.router'])
     tags: []
   };
 
+  CodeShare.getCode()
+    .then(function(res) {
+      $scope.codeShares = res;
+    });
+
   $scope.addTag = function() {
     if ($scope.newCodeShare.tags.indexOf($scope.tag) === -1) {
       $scope.newCodeShare.tags.push($scope.tag);
@@ -39,16 +44,6 @@ angular.module('codeShare.controller', ['ui.router'])
         $state.go('app.codeShare');
       });
   };
-
-  CodeShare.getCode()
-    .then(function(res) {
-      $scope.codeShares = res;
-      console.log('yo', res);
-      // $scope.setProfile= function (profile) {
-      //   $scope.currentProfile = Profile.setProfile(profile); 
-      // }
-    });
-
 
   // Opens modal window to display CodeShares
   $scope.codeDetailsModal = function(code) {

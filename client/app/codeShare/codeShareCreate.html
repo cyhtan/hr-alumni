@@ -17,10 +17,11 @@
 
 
         <div class="input-field col s12">
-          <input id="code" type="text" class="validate" placeholder="Code" aria-describedby="basic-addon1" ng-model="newCodeShare.code" required>
+          <textarea name="" id="code" cols="30" class="materialize-textarea" ng-model="newCodeShare.code"aria-describedby="basic-addon1" style="font-family:monospace; overflow-x: scroll; white-space: nowrap;" ></textarea>
           <label class="active" for="code">Code</label>
         </div>
-
+    
+  
         <div class="input-field col s6">
           <input id="tag" type="text" class="validate" placeholder="Tag" aria-describedby="basic-addon1" ng-model="tag" required>
           <label class="active" for="tag">Tag</label>
