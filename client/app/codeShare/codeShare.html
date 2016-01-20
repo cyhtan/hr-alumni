@@ -20,10 +20,10 @@
         </div>
         <div class="s9 col">
           
-          <a href="" ng-click="codeDetailsModal(code)" class="modal-trigger title"> {{code.title}}</a>
-          <div style="padding:5px;">
+          <a href="" ng-click="codeDetailsModal(code)" class="modal-trigger title"> {{ code.title }}</a>
+          <div>
           <label>Tagged</label>
-            <span ng-repeat="tag in code.tags | limitTo: 3" class="code-tag">{{tag}}</span>
+            <span ng-repeat="tag in code.tags | limitTo: 3" class="code-tag">{{ tag }}</span>
           </div>
         </div>
         </li>
@@ -38,7 +38,7 @@
         </div>
         <div class="l10 col">
           <img style="margin: 10px" height="150px" width="auto" ng-src="{{code.createdBy.contact.profilePic}}" alt="" class="align-center circle">
-          <h3>{{code.title}}</h3>
+          <h3>{{ code.title }}</h3>
           <label>Created By: </label> {{code.createdBy.contact.name}}
           <br>
           <label>Tags</label>

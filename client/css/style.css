@@ -117,5 +117,12 @@ footer
   margin:10px;
   font-size: 30px;
 }
+
+div.validation-err {
+  border-radius: 3px;
+  padding: 5px;
+  background-color: #EA0C0C;
+  color:white;
+}
 /* End CodeShare Styling */
 
